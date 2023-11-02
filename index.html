@@ -38,8 +38,6 @@
             background-color: rgb(57, 127, 91);
             border: 1px solid rgb(255, 255, 255);
             border-radius: 50px;
-            margin-top: 20px;
-            margin-bottom: 20px;
             padding: 10px;
             transition: background-color 0.3s, opacity 0.3s;
         }
@@ -51,7 +49,7 @@
         }
 
         .contact-item:hover {
-            background-color: rgb(82, 236, 175);
+            background-color: rgb(33, 116, 83);
             opacity: 0.8;
         }
 
@@ -63,38 +61,75 @@
 </head>
 
 <body>
-    <header>
-        <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4">
-                <img src="perfil-profissional.png" style="height: 150px; width: 150px;" alt="Imagem de cabeçalho" class="ms-auto img-fluid">
+    <div class="container-fluid text-center">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <img src="perfil-profissional.png" style="height: 150px; max-width: 150px;" alt="Imagem de cabeçalho" class="ms-auto img-fluid">
+                </div>
+                <div class="col-4">
+                    <img src="backgroud.jpg" style="height: 150px; max-width: 250px;" alt="Imagem de cabeçalho" class="ms-5=au img-fluid">
+                </div>
             </div>
-            <div class="col-4">
-                <img src="backgroud.jpg" style="height: 150px; width: 250px;" alt="Imagem de cabeçalho" class="ms-5 img-fluid">
-            </div>
+            <h1 class="mt-2">GHSS Contabilidade</h1>
+            <h2>Gabrielle Silva</h2>
         </div>
-        <h1 class="mt-2">GHSS Contabilidade</h1>
-        <h2>Gabrielle Silva</h2>
-    </header>
-    <div style="margin-left: 20%; margin-right: 20%; background-color: rgb(57, 127, 119); ;">
-        <ul class="contact-list">
-            <li class="contact-item">
-                <a class="contact-link" href="https://www.instagram.com/ghss.contabilidade/">
-                    @GHSS.Contabilidade
-                </a>
-            </li>
-            <li class="contact-item">
-                <a class="contact-link" href="https://www.example.com">
-                    Contato 2
-                </a>
-            </li>
-            <li class="contact-item">
-                <a class="contact-link" href="https://www.example.com">
-                    Contato 3
-                </a>
-            </li>
-        </ul>
+        <div class="container mt-5">
+            <ul class="contact-list mx-5">
+                <li id="servicesOpt" class="contact-item my-4">
+                    <a class="contact-link">
+                        Serviços
+                    </a>
+                    <ul id="servicesList" class="rounded-pill" style="list-style: none; padding: 0; display: none;">
+                        <hr/>
+                        <li>Abertura de MEI</li>
+                        <li>Cancelamento de MEI</li>
+                        <li>IRRF</li>
+                        <li>RPA</li>
+                        <li>Carne Leão</li>
+                        <li>Emissão DAS</li>
+                        <li>Emissão de NF </li>
+                        <li>Declarção Mensal MEI</li>
+                        <li>Parcelamento Tributário</li>
+                        <li>Elaboração de Pequenos Contratos</li>
+                        <!-- <li>Simples Nacional - Sem funcionários</li> -->
+                    </ul>
+                </li>
+                <li class="contact-item my-4">
+                    <a class="contact-link" href="https://www.example.com">
+                        Apostilas
+                    </a>
+                </li>
+                <li class="contact-item my-4">
+                    <a class="contact-link" href="https://wa.me/5511947923797?text=Ol%C3%A1%20Gabrielle%2C%20venho%20do%20seu%20site%20e%20queria%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os.">
+                        Whatsapp
+                    </a>
+                </li>
+                <li class="contact-item">
+                    <a class="contact-link" href="https://www.instagram.com/ghss.contabilidade/">
+                        @GHSS.Contabilidade
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
+
+    <script>
+        let active = false;
+        const servicesList = document.getElementById('servicesList');
+        const servicesOpt = document.getElementById('servicesOpt');
+
+        servicesOpt.addEventListener('click', ()=> {
+            if(active){
+                servicesList.style = "list-style: none; padding: 0; display: none;"
+                active = false;
+            }else{
+                servicesList.style = "list-style: none; padding: 0; display: block;"
+                active = true;
+            }
+        }) 
+    </script>
 </body>
 
 </html>
