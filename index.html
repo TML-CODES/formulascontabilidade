@@ -16,8 +16,6 @@
 
         header {
             background-color: rgb(15, 43, 5);
-            text-align: center;
-            padding: 20px;
         }
 
         h1 {
@@ -28,88 +26,104 @@
             font-size: x-large;
         }
 
-        .contact-list {
+        .list-group-item {
             background-color: rgb(15, 43, 5);
-            list-style: none;
-            padding: 0;
         }
 
-        .contact-item {
-            background-color: rgb(57, 127, 91);
-            border: 1px solid rgb(255, 255, 255);
-            border-radius: 50px;
-            padding: 10px;
-            transition: background-color 0.3s, opacity 0.3s;
-        }
-
-        .contact-link {
-            text-decoration: none;
+        .btn {
             color: white;
-            display: block;
-        }
-
-        .contact-item:hover {
-            background-color: rgb(33, 116, 83);
-            opacity: 0.8;
         }
 
         a {
             font-size: large;
             text-align: center;
+            text-decoration: none;
+            color: white;
         }
     </style>
 </head>
 
 <body>
     <div class="container-fluid text-center">
-        <div class="container mt-4">
+        <div class="container mt-4 p-1">
             <div class="row">
                 <div class="col-4"></div>
                 <div class="col-4">
-                    <img src="perfil-profissional.png" style="height: 150px; max-width: 150px;" alt="Imagem de cabeçalho" class="ms-auto img-fluid">
+                    <img src="./images/perfil-profissional.png" style="height: auto; max-width: 150px;" alt="Imagem de cabeçalho" class="ms-auto img-fluid">
                 </div>
                 <div class="col-4">
-                    <img src="backgroud.jpg" style="height: 150px; max-width: 250px;" alt="Imagem de cabeçalho" class="ms-5=au img-fluid">
+                    <img src="./images/backgroud.jpg" style="height: auto; max-width: 250px;" alt="Imagem de cabeçalho" class="ms-5=au img-fluid">
                 </div>
             </div>
-            <h1 class="mt-2">GHSS Contabilidade</h1>
-            <h2>Gabrielle Silva</h2>
+            <h1 class="mt-2 text-align">GHSS Contabilidade</h1>
+            <h2 class="text-align">Gabrielle Silva</h2>
         </div>
-        <div class="container mt-5">
-            <ul class="contact-list mx-5">
-                <li id="servicesOpt" class="contact-item my-4">
-                    <a class="contact-link">
-                        Serviços
-                    </a>
-                    <ul id="servicesList" class="rounded-pill" style="list-style: none; padding: 0; display: none;">
-                        <hr/>
+        <div class="container mt-2">
+            <ul class="mx-5 list-group">
+                <li id="servicesOpt" class="container btn btn-outline-success mb-2 rounded-pill">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="./images/public-service.png" style="height: auto; max-width: 30px;" class="img-fluid float-start">
+                        </div>
+                        <div class="col-4">
+                            <a>Serviços</a>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                </li>
+                <ul id="servicesList" class="list-group mb-2 mx-auto rounded-pill" style="list-style: none; display: none;">
+                    <div class="col"></div>
+                    <div class="col">
                         <li>Abertura de MEI</li>
                         <li>Cancelamento de MEI</li>
                         <li>IRRF</li>
                         <li>RPA</li>
                         <li>Carne Leão</li>
                         <li>Emissão DAS</li>
-                        <li>Emissão de NF </li>
+                        <li>Emissão de NF</li>
                         <li>Declarção Mensal MEI</li>
                         <li>Parcelamento Tributário</li>
                         <li>Elaboração de Pequenos Contratos</li>
                         <!-- <li>Simples Nacional - Sem funcionários</li> -->
-                    </ul>
+                    </div>
+                    <div class="col"></div>
+                </ul>
+                <li class="container btn btn-outline-success my-2 rounded-pill">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="./images/e-book (1).png" style="height: auto; max-width: 30px;" class="img-fluid float-start">
+                        </div>
+                        <div class="col-4">
+                            <a class="">Apostilas</a>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
                 </li>
-                <li class="contact-item my-4">
-                    <a class="contact-link" href="https://www.example.com">
-                        Apostilas
-                    </a>
+                <li class="container btn btn-outline-success my-2 rounded-pill">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="./images/whatsapp (1).png" style="height: auto; max-width: 30px;" class="img-fluid float-start">
+                        </div>
+                        <div class="col-4">
+                            <a class="" href="https://wa.me/5511947923797?text=Ol%C3%A1%20Gabrielle%2C%20venho%20do%20seu%20site%20e%20queria%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os.">
+                                Whatsapp
+                            </a>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
                 </li>
-                <li class="contact-item my-4">
-                    <a class="contact-link" href="https://wa.me/5511947923797?text=Ol%C3%A1%20Gabrielle%2C%20venho%20do%20seu%20site%20e%20queria%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os.">
-                        Whatsapp
-                    </a>
-                </li>
-                <li class="contact-item">
-                    <a class="contact-link" href="https://www.instagram.com/ghss.contabilidade/">
-                        @GHSS.Contabilidade
-                    </a>
+                <li class="container btn btn-outline-success my-2 rounded-pill">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="./images/instagram (1).png" style="height: auto; max-width: 30px;" class="img-fluid float-start">
+                        </div>
+                        <div class="col-4">
+                            <a href="https://www.instagram.com/ghss.contabilidade/" class="">
+                                @GHSS.Contabilidade
+                            </a>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
                 </li>
             </ul>
         </div>
