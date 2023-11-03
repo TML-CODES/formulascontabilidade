@@ -1,5 +1,6 @@
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <style>
@@ -34,39 +35,38 @@
             color: white;
         }
 
-        a {
-            font-size: large;
-            text-align: center;
-            text-decoration: none;
-            color: white;
+        .btn:focus {
+            outline: none; /* Remove a borda de destaque (outline) */
         }
     </style>
 </head>
 
 <body>
+    <!-- MOBILE -->
+    <!-- DESKTOP -->
     <div class="container-fluid text-center">
         <div class="container mt-4 p-1">
             <div class="row">
-                <div class="col-4"></div>
-                <div class="col-4">
-                    <img src="./images/perfil-profissional.png" style="height: auto; max-width: 150px;" alt="Imagem de cabeçalho" class="ms-auto img-fluid">
+                <div class="col"></div>
+                <div class="col">
+                    <img src="./images/perfil-profissional.png" style="height: auto; max-width: 150px;" alt="Imagem de cabeçalho" class="img-fluid float-center">
                 </div>
-                <div class="col-4">
-                    <img src="./images/backgroud.jpg" style="height: auto; max-width: 250px;" alt="Imagem de cabeçalho" class="ms-5=au img-fluid">
+                <div class="col">
+                    <img src="./images/backgroud.jpg" style="height: auto; max-width: 250px;" alt="Imagem de cabeçalho" class="img-fluid d-none d-lg-block float-end me-4">
                 </div>
             </div>
             <h1 class="mt-2 text-align">GHSS Contabilidade</h1>
             <h2 class="text-align">Gabrielle Silva</h2>
         </div>
-        <div class="container mt-2">
-            <ul class="mx-5 list-group">
+        <div class="container mt-3">
+            <ul class="mx-auto mx-lg-5 list-group">
                 <li id="servicesOpt" class="container btn btn-outline-success mb-2 rounded-pill">
                     <div class="row">
                         <div class="col">
                             <img src="./images/public-service.png" style="height: auto; max-width: 30px;" class="img-fluid float-start">
                         </div>
                         <div class="col">
-                            <a>Serviços</a>
+                            <p class="fs-5 my-auto">Serviços</p>
                         </div>
                         <div class="col"></div>
                     </div>
@@ -90,39 +90,35 @@
                 </ul>
                 <li class="container btn btn-outline-success my-2 rounded-pill">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col">
                             <img src="./images/e-book (1).png" style="height: auto; max-width: 30px;" class="img-fluid float-start">
                         </div>
-                        <div class="col-4">
-                            <a class="">Apostilas</a>
+                        <div class="col">
+                            <p class="fs-5 my-auto">Apostilas</p>
                         </div>
-                        <div class="col-4"></div>
+                        <div class="col"></div>
                     </div>
                 </li>
                 <li class="container btn btn-outline-success my-2 rounded-pill" onclick="location.href='https://wa.me/5511947923797?text=Ol%C3%A1%20Gabrielle%2C%20venho%20do%20seu%20site%20e%20queria%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os.';">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col">
                             <img src="./images/whatsapp (1).png" style="height: auto; max-width: 30px;" class="img-fluid float-start">
                         </div>
-                        <div class="col-4">
-                            <a class="" href="https://wa.me/5511947923797?text=Ol%C3%A1%20Gabrielle%2C%20venho%20do%20seu%20site%20e%20queria%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os.">
-                                Whatsapp
-                            </a>
+                        <div class="col">
+                            <p class="fs-5 my-auto">Whatsapp</p>
                         </div>
-                        <div class="col-4"></div>
+                        <div class="col"></div>
                     </div>
                 </li>
                 <li class="container btn btn-outline-success my-2 rounded-pill" onclick="location.href='https://www.instagram.com/ghss.contabilidade/';">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col">
                             <img src="./images/instagram (1).png" style="height: auto; max-width: 30px;" class="img-fluid float-start">
                         </div>
-                        <div class="col-4">
-                            <a href="https://www.instagram.com/ghss.contabilidade/" class="">
-                                @GHSS.Contabilidade
-                            </a>
+                        <div class="col">
+                            <p class="fs-5 my-auto">@GHSS.Contabilidade</p>
                         </div>
-                        <div class="col-4"></div>
+                        <div class="col"></div>
                     </div>
                 </li>
             </ul>
