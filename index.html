@@ -57,7 +57,7 @@
         </div>
         <div class="container mt-3">
             <ul class="mx-auto mx-lg-5 list-group">
-                <li id="servicesOpt" class="container btn btn-outline-secondary mb-2 rounded-pill">
+                <li id="servicesOpt" class="container btn btn-outline-secondary mb-2 rounded-pill" data-toggle="modal" data-target="#imagemModal">
                     <div class="row">
                         <div class="col">
                             <img src="./images/public-service.png" style="height: auto; max-width: 30px;"
@@ -69,23 +69,15 @@
                         <div class="col"></div>
                     </div>
                 </li>
-                <ul id="servicesList" class="list-group mb-2 mx-auto rounded-pill"
-                    style="list-style: none; display: none;">
-                    <div class="col"></div>
-                    <div class="col">
-                        <li>Consultoria para MEI</li>
-                        <li>Imposto de Renda Pessoa Física - IRPF</li>
-                        <li>Alteração Cadastral</li>
-                        <li>RPA</li>
-                        <li>Carnê Leão</li>
-                        <li>Regularização de CPF</li>
-                        <li>BPO Financeiro</li>
-                        <li>Parcelamento Tributário</li>
-                        <li>Elaboração de Pequenos Contratos</li>
-                        <!-- <li>Simples Nacional - Sem funcionários</li> -->
+                <div class="modal fade" id="imagemModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="./images/Portifolio.jpg" class="img-fluid" alt="Imagem">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col"></div>
-                </ul>
+                </div>
                 <li id="ebookOpt" class="container btn btn-outline-secondary my-2 rounded-pill">
                     <div class="row">
                         <div class="col">
@@ -141,20 +133,6 @@
     </a>
 
     <script>
-        let activeServicesList = false;
-        const servicesList = document.getElementById('servicesList');
-        const servicesOpt = document.getElementById('servicesOpt');
-
-        servicesOpt.addEventListener('click', () => {
-            if (activeServicesList) {
-                servicesList.style = "list-style: none; padding: 0; display: none;"
-                activeServicesList = false;
-            } else {
-                servicesList.style = "list-style: none; padding: 0; display: block;"
-                activeServicesList = true;
-            }
-        }); 
-
         let activeEbookList = false;
         const ebookList = document.getElementById('ebookList');
         const ebookOpt = document.getElementById('ebookOpt');
@@ -169,5 +147,8 @@
             }
         }); 
     </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
