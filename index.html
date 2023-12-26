@@ -39,8 +39,8 @@
     </style>
 </head>
 <body>
-    <div class="container-fluid text-center">
-        <div class="container mt-4 p-1">
+    <div class="container-fluid">
+        <div class="container mt-4 p-1 text-center">
             <div class="row">
                 <div class="col"></div>
                 <div class="col">
@@ -78,26 +78,36 @@
                         </div>
                     </div>
                 </div>
-                <li id="ebookOpt" class="container btn btn-outline-secondary my-2 rounded-pill">
+                <li id="ebookOpt" class="container btn btn-outline-secondary my-2 rounded-pill" data-toggle="modal" data-target="#videoModal">
                     <div class="row">
                         <div class="col">
-                            <img src="./images/e-book (1).png" style="height: auto; max-width: 30px;"
+                            <img src="./images/icons8-google-sheets-48.png" style="height: auto; max-width: 30px;"
                                 class="img-fluid float-start">
                         </div>
                         <div class="col">
-                            <p class="fs-5 my-auto">E-books</p>
+                            <p class="fs-5 my-auto text-nowrap">Controle Financeiro</p>
                         </div>
                         <div class="col"></div>
                     </div>
                 </li>
-                <ul id="ebookList" class="list-group mb-2 mx-auto rounded-pill"
-                    style="list-style: none; display: none;">
-                    <div class="col"></div>
-                    <div class="col">
-                        <li>Em breve...</li>
+                <div class="modal fade mt-5" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog mt-5" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <video id="videoPlayer" style="max-width: 100%;" height="auto" class="embed-responsive-item" controls>
+                                        <source src="./videos/planilha-empreendedor-formula.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <p class="mt-2 text-justify">Quer ter controle financeiro da sua empresa, com uma planilha automatizada e de fácil utilização?<br>Adquira agora por apenas <b>R$ 39,99</b></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success"
+                                onclick="location.href='https://wa.me/5511985191951?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20obter%20a%20planilha%20automatizada%20para%20controle%20financeiro%20da%20minha%20empresa%21';">Comprar Agora</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col"></div>
-                </ul>
+                </div>
                 <li class="container btn btn-outline-secondary my-2 rounded-pill"
                     onclick="location.href='https://wa.me/5511985191951?text=Ol%C3%A1%2C%20venho%20do%20seu%20site%20e%20queria%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os.';">
                     <div class="row">
@@ -133,19 +143,13 @@
     </a>
 
     <script>
-        let activeEbookList = false;
-        const ebookList = document.getElementById('ebookList');
         const ebookOpt = document.getElementById('ebookOpt');
-
-        ebookOpt.addEventListener('click', () => {
-            if (activeEbookList) {
-                ebookList.style = "list-style: none; padding: 0; display: none;"
-                activeEbookList = false;
-            } else {
-                ebookList.style = "list-style: none; padding: 0; display: block;"
-                activeEbookList = true;
-            }
-        }); 
+        const videoPlayer = document.getElementById('videoPlayer');
+        ebookOpt.onclick = (event)=>{
+            setTimeout(()=> {
+                videoPlayer.play();
+            }, 500);
+        };
     </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
