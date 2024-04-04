@@ -1,13 +1,27 @@
 <html>
+
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16481816754"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'AW-16481816754');
     </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (
+            function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-MMPGXGNM');
+    </script>
+    <!-- End Google Tag Manager -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marcellus">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -38,15 +52,23 @@
         /* .btn-outline-secondary:hover{
             opacity: 0.7;
         } */
-        
+
         @media (max-width: 768px) {
             .signature {
-                font-size: small; 
+                font-size: small;
             }
         }
     </style>
 </head>
+
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMPGXGNM" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="container-fluid pb-3">
         <div class="container mt-4 p-1 text-center">
             <div class="row">
@@ -65,7 +87,8 @@
         </div>
         <div class="container mt-3">
             <ul class="mx-auto mx-lg-5 list-group">
-                <li id="servicesOpt" class="container btn btn-outline-secondary mb-2 rounded-pill" data-toggle="modal" data-target="#imagemModal">
+                <li id="servicesOpt" class="container btn btn-outline-secondary mb-2 rounded-pill" data-toggle="modal"
+                    data-target="#imagemModal">
                     <div class="row">
                         <div class="col">
                             <img src="./images/public-service.png" style="height: auto; max-width: 30px;"
@@ -77,7 +100,8 @@
                         <div class="col"></div>
                     </div>
                 </li>
-                <div class="modal fade" id="imagemModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="imagemModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-body">
@@ -86,7 +110,8 @@
                         </div>
                     </div>
                 </div>
-                <li id="ebookOpt" class="container btn btn-outline-secondary my-2 rounded-pill" data-toggle="modal" data-target="#videoModal">
+                <li id="ebookOpt" class="container btn btn-outline-secondary my-2 rounded-pill" data-toggle="modal"
+                    data-target="#videoModal">
                     <div class="row">
                         <div class="col">
                             <img src="./images/icons8-google-sheets-48.png" style="height: auto; max-width: 30px;"
@@ -103,15 +128,19 @@
                         <div class="modal-content">
                             <div class="modal-body">
                                 <div class="embed-responsive embed-responsive-16by9">
-                                    <video id="videoPlayer" style="max-width: 100%;" height="auto" class="embed-responsive-item" controls>
+                                    <video id="videoPlayer" style="max-width: 100%;" height="auto"
+                                        class="embed-responsive-item" controls>
                                         <source src="./videos/planilha-empreendedor-formula.mp4" type="video/mp4">
                                     </video>
                                 </div>
-                                <p class="mt-2 text-justify">Quer ter controle financeiro da sua empresa, com uma planilha automatizada e de fácil utilização?<br>Adquira agora por apenas <b>R$ 39,99</b></p>
+                                <p class="mt-2 text-justify">Quer ter controle financeiro da sua empresa, com uma
+                                    planilha automatizada e de fácil utilização?<br>Adquira agora por apenas <b>R$
+                                        39,99</b></p>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-success"
-                                onclick="location.href='https://wa.me/5511985191951?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20obter%20a%20planilha%20automatizada%20para%20controle%20financeiro%20da%20minha%20empresa%21';">Comprar Agora</button>
+                                    onclick="location.href='https://wa.me/5511985191951?text=Ol%C3%A1%2C%20eu%20gostaria%20de%20obter%20a%20planilha%20automatizada%20para%20controle%20financeiro%20da%20minha%20empresa%21';">Comprar
+                                    Agora</button>
                             </div>
                         </div>
                     </div>
@@ -157,17 +186,18 @@
                 </li>
             </ul>
         </div>
-        
-        <a style="font-size: x-small;" class="signature ps-2 fixed-bottom no-wrap link-secondary link-opacity-80 link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-50-hover"
+
+        <a style="font-size: x-small;"
+            class="signature ps-2 fixed-bottom no-wrap link-secondary link-opacity-80 link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-50-hover"
             href="https://github.com/TML-CODES" target="_blank">Desenvolvido por TML Codes
         </a>
     </div>
-    
+
     <script>
         const ebookOpt = document.getElementById('ebookOpt');
         const videoPlayer = document.getElementById('videoPlayer');
-        ebookOpt.onclick = (event)=>{
-            setTimeout(()=> {
+        ebookOpt.onclick = (event) => {
+            setTimeout(() => {
                 videoPlayer.play();
             }, 500);
         };
@@ -176,4 +206,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>
