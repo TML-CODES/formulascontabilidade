@@ -104,7 +104,7 @@ a:hover {
 
 #topbar .contact-info i {
     color: #393536;
-    padding-right: 4px;
+    padding-right: 1px;
     margin-left: 15px;
     line-height: 0;
 }
@@ -275,7 +275,7 @@ a:hover {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
-    color: #1977cc;
+    color: #939DA7;
 }
 
 .navbar .dropdown:hover > ul {
@@ -339,7 +339,7 @@ a:hover {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(28, 47, 65, 0.9);
+    background: rgba(62 65 68 / 0.9);
     transition: 0.3s;
     z-index: 999;
 }
@@ -378,7 +378,7 @@ a:hover {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
-    color: #1977cc;
+    color: #ABB9C4;
 }
 
 .navbar-mobile .getstarted,
