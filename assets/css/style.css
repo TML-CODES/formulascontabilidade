@@ -193,8 +193,9 @@ a:hover {
 }
 
 .appointment-btn:hover {
-    background: #393536;
-    color: #fff;
+    color: var(--secondary-color);
+    background: var(--primary-color);
+    border: 2px solid var(--secondary-color);
 }
 
 @media (max-width: 768px) {
@@ -480,11 +481,13 @@ a:hover {
     transition: 0.5s;
     color: var(--primary-color);
     background: var(--secondary-color);
-    border: 2px solid rgb(151, 150, 150);
+    border: 2px solid var(--primary-shadow);
 }
 
 #hero .btn-get-started:hover {
-    background: #222020;
+    color: var(--secondary-color);
+    background: var(--primary-color);
+    border: 2px solid var(--secondary-color);
 }
 
 @media (min-width: 1024px) {
