@@ -1005,8 +1005,8 @@ section {
 }
 
 .services .icon-box:hover {
-    background: var(--primary-shadow);
-    border-color: var(--primary-color);
+    background: #6633FFD3;
+    border-color: var(--secondary-shadow);
 }
 
 .services .icon-box:hover .icon {
