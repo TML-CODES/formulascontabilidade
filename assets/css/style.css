@@ -1494,11 +1494,11 @@ section {
 
 .contact .info i {
     font-size: 20px;
-    color: white;
     float: left;
     width: 44px;
     height: 44px;
-    background: #343a40;
+    background: var(--secondary-color);
+    color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1543,8 +1543,8 @@ section {
 }
 
 .contact .info .item:hover i {
-    background: white;
-    color: #343a40;
+    background: var(--primary-color);
+    color: var(--secondary-color);   
 }
 
 @keyframes animate-loading {
